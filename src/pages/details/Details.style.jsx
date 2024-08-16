@@ -4,6 +4,7 @@ export const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 1.5rem;
 `;
 
 export const DetailHeader = styled.div`
