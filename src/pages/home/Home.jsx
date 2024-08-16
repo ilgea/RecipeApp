@@ -16,10 +16,8 @@ const Home = () => {
   });
   const mealType = ["Breakfast", "Dinner", "Lunch", "Snack", "Teatime"];
 
-  // const APP_ID = process.env.REACT_APP_APP_ID;
-  // const APP_KEY = process.env.REACT_APP_APP_KEY;
-  const APP_ID = "227aa975";
-  const APP_KEY = "65eed218c24bd7732ea744a0c3bdd41e";
+  const APP_ID = process.env.REACT_APP_APP_FOOD_ID;
+  const APP_KEY = process.env.REACT_APP_APP_FOOD_KEY;
 
   const url = `https://api.edamam.com/search?q=${querry}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
 
