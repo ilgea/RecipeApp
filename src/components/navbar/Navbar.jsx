@@ -10,7 +10,6 @@ import {
 } from "./Navbar.style";
 import { useLoginContext } from "../../context/LoginProvider";
 import { logOut } from "../../auth/firebase";
-// import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -21,13 +20,14 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await logOut();
-      sessionStorage.removeItem("recipes");
+      localStorage.removeItem("recipes");
       navigate("/login");
     } catch (error) {
       console.error("Logout error:", error.message);
     }
   };
-  console.log(location); // bir obje döndürür
+  // bir obje döndürür
+  // console.log(location);
   // {
   //   hash: "";
   //   key: "ch621vbb";
@@ -35,7 +35,9 @@ const Navbar = () => {
   //   search: "";
   //   state: null;
   // }
-  console.log(location.pathname); // "/login veua /register"
+
+  // "/login veya /register"
+  // console.log(location.pathname);
 
   return (
     <ContainerStyled>
