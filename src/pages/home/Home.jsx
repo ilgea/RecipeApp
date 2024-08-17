@@ -1,17 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "../../components/header/Header";
 import homeSvg from "../../assets/home.svg";
 import { HomeContainer, HomeImg, HomeImgDiv, NotFoundText } from "./Home.style";
 import Card from "../../components/card/Card";
-import { useEffect } from "react";
 
 const Home = () => {
   const [selectedMeal, setSelectedMeal] = useState("breakfast");
   const [querry, setQuerry] = useState("");
-  // const [recipes, setRecipes] = useState(null);
   const [recipes, setRecipes] = useState(() => {
-    const savedRecipes = sessionStorage.getItem("recipes");
+    const savedRecipes = localStorage.getItem("recipes");
     return savedRecipes ? JSON.parse(savedRecipes) : null;
   });
   const mealType = ["Breakfast", "Dinner", "Lunch", "Snack", "Teatime"];
@@ -25,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     if (recipes) {
-      sessionStorage.setItem("recipes", JSON.stringify(recipes));
+      localStorage.setItem("recipes", JSON.stringify(recipes));
     }
   }, [recipes]);
 

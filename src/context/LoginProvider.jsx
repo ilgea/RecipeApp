@@ -8,10 +8,20 @@ export const useLoginContext = () => {
 };
 
 const LoginContextProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(() => {
+    const savedUser = localStorage.getItem("currentUser");
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
 
   useEffect(() => {
-    userObserver(setCurrentUser);
+    userObserver((user) => {
+      setCurrentUser(user);
+      if (user) {
+        localStorage.setItem("currentUser", JSON.stringify(user));
+      } else {
+        localStorage.removeItem("currentUser");
+      }
+    });
   }, []);
 
   return (
