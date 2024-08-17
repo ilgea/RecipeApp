@@ -10,7 +10,6 @@ Project aims to create a Recipe App.
 
 ## Project Skeleton
 
-
 ```
 └── 📁recipe-app
     └── 📁public
@@ -89,6 +88,8 @@ Build a Recipe App using ReactJS.
 
 - ReactJS
 
+- firebase authentication
+
 ### At the end of the project, students will be able to;
 
 - improve coding skills within HTML & CSS & JS & ReactJS.
@@ -112,7 +113,6 @@ Build a Recipe App using ReactJS.
 ## Notes
 
 - You can add additional functionalities to your app.
-
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
 
