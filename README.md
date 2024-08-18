@@ -72,7 +72,16 @@ Project aims to create a Recipe App.
 
 ## Expected Outcome
 
-![Project 005 Snapshot](recipe-app.png)
+<p align="center">
+<a href="#"><img src="recipe-app.png" alt="screenshot"></a>
+</p>
+
+## Links
+
+<p align="left">
+<b>Check The Live Website ➡️</b> <a href="https://newrecipesapp.netlify.app">Live Website</a>
+</p>
+<hr>
 
 ## Objective
 
