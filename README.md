@@ -97,6 +97,8 @@ Build a Recipe App using ReactJS.
 
 - ReactJS
 
+- Context API
+
 - firebase authentication
 
 ### At the end of the project, students will be able to;
