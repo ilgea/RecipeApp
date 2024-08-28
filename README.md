@@ -11,7 +11,7 @@ Project aims to create a Recipe App.
 ## Project Skeleton
 
 ```
-└── 📁recipe-app
+└── 📁RecipeApp
     └── 📁public
         └── index.html
     └── 📁src
@@ -61,13 +61,13 @@ Project aims to create a Recipe App.
             └── PrivateRouter.jsx
         └── App.js
         └── index.js
-    └── .env
     └── .gitignore
+    └── netlify.toml
     └── package-lock.json
     └── package.json
     └── README.md
+    └── recipe-app.png
     └── yarn.lock
-
 ```
 
 ## Expected Outcome
